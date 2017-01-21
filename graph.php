@@ -35,9 +35,9 @@ read_config();
                 <div id="docs" class="docs"></div>
             </div>
         </div>
-        <script src="jquery/jquery-1.10.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="jquery/jquery.browser.min.js"></script>
-        <script src="d3/d3.v3.min.js"></script>
+        <script src="https://d3js.org/d3.v3.js"></script>
         <script src="colorbrewer.js"></script>
         <script src="lib/geometry.js"></script>
         <script>
