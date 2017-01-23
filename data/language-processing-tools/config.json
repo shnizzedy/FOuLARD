@@ -4,7 +4,7 @@
         "linkDistance" : 75,
         "charge"       : -400,
         "friction"     : 0.01,
-        "height"       : 680,
+        "height"       : 1100,
         "numColors"    : 12,
         "gravity"      : 0.1,
         "labelPadding" : {
