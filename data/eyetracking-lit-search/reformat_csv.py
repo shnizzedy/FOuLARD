@@ -21,15 +21,22 @@ with open('compilation.csv', 'r') as f:
     data = pd.read_csv(f)
 
 new_json = {}
-new_markdown = []
+new_markdown = {}
 
 for index, row in data.iterrows():
-    new_json[row["Article Citation"].strip()] = {"name" : row[
-             "Article Citation"].strip(),
+    article = row["Article Citation"].strip().replace("&", "and")
+    article = article[0:article.find(')')+1]
+    new_json[article] = {"name" : article,
              "type" : "article", "depend" : [row[
              "Eyetracking Hardware"].strip(), row[
              "Disorder"].strip(), row["Analysis Method"], row[
              "Analysis Software"]]}
+    new_markdown[article] = {"year" : row["Year"], "hardware": row[
+                 "Eyetracking Hardware"].strip(), "Disorder" : row[
+                 "Disorder"].strip(), "Task" : row["Task"].strip(),
+                 "Method" : row["Analysis Method"], "Software" : row[
+                 "Analysis Software"], "Conclusion" : row["Conclusion"].strip(
+                 )}
     if row["Eyetracking Hardware"].strip() not in new_json:
         new_json[row["Eyetracking Hardware"].strip()] = {"name" : row[
                  "Eyetracking Hardware"].strip(), "type" : "hardware"}
@@ -74,5 +81,11 @@ for key in new_json:
         new_json[key]["depends"] = []
     new_json_list.append(new_json[key])
 
+
 with open('new_objects.json', 'w') as f:
     json.dump(new_json_list, f)
+
+for key in new_markdown:
+    mkstring = ''.join(["### Conclusion\n", new_markdown[key]["Conclusion"]])
+    with open(''.join([key.strip(), ".mkdn"]), "w") as f:
+        f.write(mkstring)
