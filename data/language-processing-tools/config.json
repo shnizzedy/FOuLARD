@@ -22,6 +22,10 @@
         "ticksWithoutCollisions" : 10
     },
     "types" : {
+        "domain" : {
+            "short" : "Domains",
+            "long"  : "Domains"
+        },
         "method" : {
             "short" : "Methods",
             "long"  : "Methods"
@@ -29,10 +33,6 @@
         "paper" : {
             "short" : "Papers",
             "long"  : "Papers"
-        },
-        "domain" : {
-            "short" : "Domains",
-            "long"  : "Domains"
         },
         "software" : {
             "short" : "Software",
