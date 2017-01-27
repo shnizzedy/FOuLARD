@@ -120,7 +120,7 @@ function drawGraph() {
     }
     graph.categoryKeys = d3.keys(graph.categories);
 
-    graph.colors = colorbrewer.Set3[config.graph.numColors];
+    graph.colors = colorbrewer.CMI[config.graph.numColors];
 
     function getColorScale(darkness) {
         return d3.scale.ordinal()
