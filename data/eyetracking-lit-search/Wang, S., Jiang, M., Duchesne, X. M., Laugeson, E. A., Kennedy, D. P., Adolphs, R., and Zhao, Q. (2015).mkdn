@@ -1,0 +1,2 @@
+### Conclusion
+ASD children look more at image centers, even when there is no object at the center. They fixated more on regions of pixel-level saliency and were quicker to fixate on objects rather than faces, showing atypical visual attention across multiple levels and categories of objects

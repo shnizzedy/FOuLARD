@@ -1,0 +1,2 @@
+### Conclusion
+PD and elderly controls best discriminated by oculomotor-based features; ADHD and FASD children discriminated from controls by saliency-based features (suggesting that their bottom-up attention is affected)
