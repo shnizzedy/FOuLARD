@@ -31,12 +31,12 @@ for index, row in data.iterrows():
              "Eyetracking Hardware"].strip(), row[
              "Disorder"].strip(), row["Analysis Method"], row[
              "Analysis Software"]]}
-    new_markdown[article] = {"year" : row["Year"], "hardware": row[
-                 "Eyetracking Hardware"].strip(), "Disorder" : row[
-                 "Disorder"].strip(), "Task" : row["Task"].strip(),
-                 "Method" : row["Analysis Method"], "Software" : row[
-                 "Analysis Software"], "Conclusion" : row["Conclusion"].strip(
-                 )}
+    new_markdown[article] = {"Citation" : row["Article Citation"], "Year" :
+                 row["Year"], "Hardware": row["Eyetracking Hardware"].strip(),
+                 "Disorder" : row["Disorder"].strip(), "Task" : row[
+                 "Task"].strip(), "Method" : row["Analysis Method"],
+                 "Software" : row["Analysis Software"], "Conclusion" : row[
+                 "Conclusion"].strip()}
     if row["Eyetracking Hardware"].strip() not in new_json:
         new_json[row["Eyetracking Hardware"].strip()] = {"name" : row[
                  "Eyetracking Hardware"].strip(), "type" : "hardware"}
@@ -86,6 +86,7 @@ with open('new_objects.json', 'w') as f:
     json.dump(new_json_list, f)
 
 for key in new_markdown:
-    mkstring = ''.join(["### Conclusion\n", new_markdown[key]["Conclusion"]])
+    mkstring = ''.join(["### ", new_markdown[key]["Citation"],
+               "\n### Conclusion\n", new_markdown[key]["Conclusion"]])
     with open(''.join([key.strip(), ".mkdn"]), "w") as f:
         f.write(mkstring)
