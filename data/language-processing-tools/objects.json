@@ -1,4 +1,35 @@
 [  
+   {  
+        "type":"domain",
+        "name":"Medicine",
+        "depends":[  
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Biomarker Assays",
+        "depends":[  
+            "Medicine",
+            "Statistics"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"surveys",
+        "depends":[  
+            "Psycholinguistics",
+            "Statistics"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"NeuroLex Diagnostics",
+        "depends":[
+            "Natural Language Processing",
+            "surveys",
+            "Biomarker Assays"
+        ]
+    },
     {  
         "type":"method",
         "name":"Maximum Entropy Language Model (MELM)",
@@ -445,7 +476,7 @@
         "type":"protocol",
         "name":"Self-Assessment Manikin (SAM)",
         "depends":[  
-
+            "surveys"
         ]
     },
     {  
@@ -619,7 +650,9 @@
         {
         "type":"domain",
         "name":"Psycholinguistics",
-        "depends":[]
+        "depends":[
+            "Medicine"
+        ]
     },
     {
         "type":"software",
