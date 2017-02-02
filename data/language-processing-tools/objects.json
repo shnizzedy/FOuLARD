@@ -10,7 +10,7 @@
         "name":"Biomarker Assays",
         "depends":[  
             "Medicine",
-            "Statistics"
+            "Probability"
         ]
     },
     {  
@@ -18,14 +18,14 @@
         "name":"surveys",
         "depends":[  
             "Psycholinguistics",
-            "Statistics"
+            "Probability"
         ]
     },
     {
         "type":"software",
         "name":"NeuroLex Diagnostics",
         "depends":[
-            "Natural Language Processing",
+            "Natural Language Processing (NLP)",
             "surveys",
             "Biomarker Assays"
         ]
