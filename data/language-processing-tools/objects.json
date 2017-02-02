@@ -1,0 +1,811 @@
+[  
+   {  
+        "type":"domain",
+        "name":"Medicine",
+        "depends":[  
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Biomarker Assays",
+        "depends":[  
+            "Medicine",
+            "Statistics"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"surveys",
+        "depends":[  
+            "Psycholinguistics",
+            "Statistics"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"NeuroLex Diagnostics",
+        "depends":[
+            "Natural Language Processing",
+            "surveys",
+            "Biomarker Assays"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Maximum Entropy Language Model (MELM)",
+        "depends":[  
+            "Bag of n-Grams",
+            "Defined Corpus",
+            "Bayesian Inferencing"
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"Semantic Network",
+        "depends":[  
+
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Latent Relational Analysis (LRA)",
+        "depends":[  
+            "Singular Value Decomposition (SVD)",
+            "Defined Corpus",
+            "Vector Space Model (VSM)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Latent Dirichlet Allocation (LDA)",
+        "depends":[  
+            "term frequency\u2013inverse document frequency (tf\u2013idf)",
+            "Topic Models (TM)",
+            "Bag of Concepts",
+            "Latent Semantic Analysis (LSA)",
+            "Computational Semantic Analysis"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Bayesian Inferencing",
+        "depends":[  
+            "Topic Models (TM)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Region Connection Calculus (RCC)",
+        "depends":[  
+            "Mathematics"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Cohen, T., Widdows, D., & Rindflesch, T. (2014)",
+        "depends":[  
+            "Bag of Words",
+            "Bag of Concepts",
+            "Expansion-by-Analogy"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Levy, O., Goldberg, Y. & Dagan, I. (2015)",
+        "depends":[  
+            "Global Vectors (GloVe)",
+            "Pointwise Mutual Information (PMI)",
+            "Skip-Gram with Negative-Sampling Training Method (SGNS)",
+            "Word2Vec",
+            "hyperwords"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Mikolov, T., Yih, W. T., & Zweig, G. (2013)",
+        "depends":[  
+            "Continuous Space Lanugage Model"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013)",
+        "depends":[  
+            "Latent Dirichlet Allocation (LDA)",
+            "Latent Semantic Analysis (LSA)",
+            "Bag of Words",
+            "Neural Network Language Model (NNLM)",
+            "Bag of n-Grams"
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"SNOMED-CT",
+        "depends":[  
+            "Controlled Vocabulary"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Global Vectors (GloVe)",
+        "depends":[  
+            "Vector Space Model (VSM)",
+            "hyperwords"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Stochastic Variational Inferencing",
+        "depends":[  
+            "Variational Inferencing",
+            "Markov chain Monte Carlo (MCMC)"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Hutto, C. J. & Gilbert, E. E. (2014)",
+        "depends":[  
+            "Linguistic Inquiry and Word Count (LIWC)",
+            "Valence Aware Dictionary for sEntiment Reasoning (VADER)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Vector Symbolic Architecture (VSA)",
+        "depends":[
+            "Vector Space Model (VSM)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Latent Semantic Analysis (LSA)",
+        "depends":[  
+            "Vector Space Model (VSM)",
+            "Computational Semantic Analysis",
+            "term frequency\u2013inverse document frequency (tf\u2013idf)",
+            "Singular Value Decomposition"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Cohen, A. S., Minor, K. S, Najolia, G.M., & Hong, S. L (2009)",
+        "depends":[  
+            "The Computerized assessment of Affect from Natural Speech (CANS)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Bag of Words",
+        "depends":[  
+            "Probability"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Neural Network Language Model (NNLM)",
+        "depends":[  
+           "Neural Networks",
+           "Vector Space Model (VSM)",
+           "Natural Language Processing (NLP)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Random Indexing",
+        "depends":[  
+            "Probability"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Controlled Vocabulary",
+        "depends":[  
+            "Defined Corpus"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Hidden Markov Models (HMM)",
+        "depends":[  
+            "Neural Networks",
+            "Markov chain Monte Carlo (MCMC)",
+            "Computational Semantic Analysis"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Levy, S.D., Lowney, C., Meroney, W., & Gayler, R.W. (2014)",
+        "depends":[  
+            "Vector Symbolic Architecture (VSA)",
+            "Sparse Distributed Memory (SDM)"
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"SPECIALIST Lexicon",
+        "depends":[  
+
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Pointwise Mutual Information (PMI)",
+        "depends":[  
+            "Probability"
+        ]
+    },
+    {  
+        "type":"domain",
+        "name":"Computational Semantic Analysis",
+        "depends":[  
+            "Natural Language Processing (NLP)"
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"Unified Medical Language System (UMLS)",
+        "depends":[  
+            "Semantic Network",
+            "SNOMED-CT",
+            "SPECIALIST Lexicon",
+            "MetaThesaurus",
+            "Topic Models (TM)",
+            "Controlled Vocabulary"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Vector Space Model (VSM)",
+        "depends":[  
+            "Probability"
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"MetaThesaurus",
+        "depends":[  
+            "SNOMED-CT"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Widdows, D., Peters, S., Cederberg, S., Chan, C. K., Steffen, D., & Buitelaar, P. (2003)",
+        "depends":[  
+            "Unified Medical Language System (UMLS)",
+            "Word Sense Disambiguation (WSD)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"term frequency\u2013inverse document frequency (tf\u2013idf)",
+        "depends":[  
+
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Turney, D. (2005)",
+        "depends":[  
+            "Latent Relational Analysis (LRA)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Topic Models (TM)",
+        "depends":[  
+            "Probability"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Hoffman, M. D., Blei, D. M., Wang, C., & Paisley, J. (2013)",
+        "depends":[  
+            "Stochastic Variational Inferencing"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Mikolov, T., Deoras, A., Povey, D., Burget, L, \u010cernock\u00fd, J. (2011)",
+        "depends":[  
+            "Maximum Entropy Language Model (MELM)",
+            "Neural Network Language Model (NNLM)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Skip-Gram with Negative-Sampling Training Method (SGNS)",
+        "depends":[  
+            "Bag of n-Grams",
+            "Probability"
+        ]
+    },
+    {  
+        "type":"domain",
+        "name":"Linear Algebra",
+        "depends":[  
+            "Mathematics"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Bojanowski, P., Grave, E., Joulin, A., & Mikolov, T. (2016)",
+        "depends":[  
+            "Neural Network Language Model (NNLM)",
+            "Bag of n-Grams",
+            "Continuous Space Lanugage Model",
+            "Defined Corpus",
+            "Facebook fastText"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Bag of n-Grams",
+        "depends":[  
+            "Bag of Words"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Continuous Space Lanugage Model",
+        "depends":[  
+            "Neural Network Language Model (NNLM)",
+            "Latent Relational Analysis (LRA)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Hierarchical Dirichlet Process (HDP)",
+        "depends":[  
+            "Bayesian Inferencing"
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"International Affective Picture System (IAPS)",
+        "depends":[  
+
+        ]
+    },
+    {  
+        "type":"domain",
+        "name":"Probability",
+        "depends":[  
+             "Mathematics"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Support Vector Machine (SVM)",
+        "depends":[  
+             "Machine Learning"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Hyperspace Analogue to Language (HAL)",
+        "depends":[  
+             "Vector Space Model (VSM)"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Joulin, A., Grave, E., Bojanowski, P., & Mikolov, T. (2016)",
+        "depends":[  
+             "Facebook fastText"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Word Sense Disambiguation (WSD)",
+        "depends":[  
+             "Computational Semantic Analysis"
+        ]
+    },
+    {  
+        "type":"domain",
+        "name":"Mathematics",
+        "depends":[
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"MedLingMap",
+        "depends":[  
+            "MedLEE"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Feature Hashing",
+        "depends":[  
+            "Machine Learning"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Bag of Concepts",
+        "depends":[  
+             "Bag of Words"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Defined Corpus",
+        "depends":[  
+             "Computational Semantic Analysis"
+        ]
+    },
+    {  
+        "type":"domain",
+        "name":"Machine Learning",
+        "depends":[  
+
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Tagamets, M. A., Cortez, C. R., Griego, J. A., & Elvev\u00e5g, B. (2014)",
+        "depends":[  
+            "Latent Semantic Analysis (LSA)",
+            "Personal Thematic Coherence (PTC)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Expansion-by-Analogy",
+        "depends":[  
+             "Reflective Random Indexing"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Sparse Distributed Memory (SDM)",
+        "depends":[  
+            "Mathematics",
+            "Computational Semantic Analysis"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Random Projection",
+        "depends":[  
+            "Probability"
+        ]
+    },
+    {  
+        "type":"protocol",
+        "name":"Self-Assessment Manikin (SAM)",
+        "depends":[  
+            "surveys"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Personal Thematic Coherence (PTC)",
+        "depends":[  
+            "Psycholinguistics"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Giles, J. T., Wo, L. & Berry, M. W. (2003)",
+        "depends":[  
+            "General Text Parser (GTP)"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Singular Value Decomposition (SVD)",
+        "depends":[  
+            "Linear Algebra"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Cohen, T., Bletter, B., & Patel, V. (2008)",
+        "depends":[  
+            "Region Connection Calculus (RCC)",
+            "SNOMED-CT",
+            "Latent Semantic Analysis (LSA)",
+            "Controlled Vocabulary",
+            "Vector Space Model (VSM)",
+            "Continuous Space Lanugage Model",
+            "Support Vector Machine (SVM)",
+            "Hyperspace Analogue to Language (HAL)",
+            "Singular Value Decomposition (SVD)",
+            "WordNet",
+            "MedLEE",
+            "General Text Parser (GTP)",
+            "InfoMap NLP",
+            "Construction\u2013Integration (C\u2013I)",
+            "SPECIALIST NLP Tools"
+        ]
+    },
+    {  
+        "type":"database",
+        "name":"WordNet",
+        "depends":[  
+            "Controlled Vocabulary"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Lemmatization",
+        "depends":[  
+            "Controlled Vocabulary",
+            "Probability"
+        ]
+    },
+    {  
+        "type":"protocol",
+        "name":"The Computerized assessment of Affect from Natural Speech (CANS)",
+        "depends":[  
+            "International Affective Picture System (IAPS)",
+            "Self-Assessment Manikin (SAM)",
+            "Linguistic Inquiry and Word Count (LIWC)",
+            "Praat",
+            "E-Prime"
+        ]
+    },
+    {  
+        "type":"method",
+        "name":"Reflective Random Indexing",
+        "depends":[  
+            "Random Indexing"
+        ]
+    },
+    {  
+        "type":"paper",
+        "name":"Althoff, T., Clark, K., & Leskovec, J. (2016)",
+        "depends":[  
+            "Hidden Markov Models (HMM)",
+            "term frequency\u2013inverse document frequency (tf\u2013idf)"
+        ]
+    },
+    {  
+        "type":"domain",
+        "name":"Natural Language Processing (NLP)",
+        "depends":[  
+            "Machine Learning"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Word2Vec",
+        "depends":[
+            "Apache Lucene",
+            "Pointwise Mutual Information (PMI)",
+            "TensorFlow",
+            "Bag of Words",
+            "Skip-Gram with Negative-Sampling Training Method (SGNS)"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"hyperwords",
+        "depends":[
+            "Pointwise Mutual Information (PMI)",
+            "Skip-Gram with Negative-Sampling Training Method (SGNS)"
+        ]
+    },
+    {
+        "type":"method",
+        "name":"Variational Inferencing",
+        "depends":[
+            "Bayesian Inferencing"
+        ]
+    },
+    {
+        "type":"method",
+        "name":"Markov chain Monte Carlo (MCMC)",
+        "depends":[
+            "Probability"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Linguistic Inquiry and Word Count (LIWC)",
+        "depends":[
+            "Controlled Vocabulary"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Valence Aware Dictionary for sEntiment Reasoning (VADER)",
+        "depends":[
+            "Linguistic Inquiry and Word Count (LIWC)",
+            "Controlled Vocabulary"
+        ]
+    },
+    {
+        "type":"method",
+        "name":"Singular Value Decomposition",
+        "depends":
+        []
+    },
+    {
+        "type":"method",
+        "name":"Neural Networks",
+        "depends":
+        [
+            "Machine Learning"        
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Facebook fastText",
+        "depends":
+        [
+            "Hidden Markov Models (HMM)",
+            "Linear Algebra",
+            "Bag of n-Grams",
+            "Feature Hashing"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"MedLEE",
+        "depends":[]
+    },
+        {
+        "type":"domain",
+        "name":"Psycholinguistics",
+        "depends":[
+            "Medicine"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"General Text Parser (GTP)",
+        "depends":[]
+    },
+    {
+        "type":"software",
+        "name":"InfoMap NLP",
+        "depends":[
+            "Defined Corpus",
+            "Latent Semantic Analysis (LSA)"
+        ]
+    },
+    {
+        "type":"method",
+        "name":"Construction\u2013Integration (C\u2013I)",
+        "depends":[
+            "Psycholinguistics"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"SPECIALIST NLP Tools",
+        "depends":[
+            "SPECIALIST Lexicon"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"openSMILE",
+        "depends":[
+            "Signal Processing"
+        ]
+    },
+    {
+        "type":"domain",
+        "name":"Signal Processing",
+        "depends":[
+            "Mathematics"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Praat",
+        "depends":[
+            "Signal Processing"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"E-Prime",
+        "depends":[
+        ]
+    },
+    {
+        "type":"software",
+        "name":"ReVerb",
+        "depends":[
+            "Controlled Vocabulary"
+        ]
+    },
+    {
+        "type":"database",
+        "name":"Suggested Upper Merged Ontology (SUMO)",
+        "depends":[
+            "WordNet"
+        ]
+    },
+    {
+        "type":"database",
+        "name":"Multilingual Central Repository (MCL)",
+        "depends":[
+            "WordNet"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Semantic Vectors",
+        "depends":[
+            "InfoMap NLP",
+            "Random Indexing",
+            "Singular Value Decomposition",
+            "Random Projection",
+            "Apache Lucene"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Apache Lucene",
+        "depends":[
+        ]
+    },
+    {
+        "type":"software",
+        "name":"TensorFlow",
+        "depends":[
+            "DistBelief"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"DistBelief",
+        "depends":[
+            "Neural Network Language Model (NNLM)"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"gensim",
+        "depends":[
+            "Topic Models (TM)",
+            "Word2Vec",
+            "Random Projection",
+            "Hierarchical Dirichlet Process (HDP)",
+            "Latent Semantic Analysis (LSA)",
+            "Latent Dirichlet Allocation (LDA)"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"S-Space",
+        "depends":[
+            "Latent Semantic Analysis (LSA)",
+            "Reflective Random Indexing",
+            "Latent Relational Analysis (LRA)",
+            "Hyperspace Analogue to Language (HAL)",
+            "Random Indexing"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"NLTK",
+        "depends":[
+            "Bayesian Inferencing",
+            "Word Sense Disambiguation (WSD)",
+            "Maximum Entropy Language Model (MELM)"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Apache OpenNLP",
+        "depends":[
+            "Lemmatization",
+            "Maximum Entropy Language Model (MELM)"
+        ]
+    },
+    {
+        "type":"software",
+        "name":"Vowpal Wabbit",
+        "depends":[
+            "Bag of Words",
+            "Feature Hashing"
+        ]
+    }
+]
