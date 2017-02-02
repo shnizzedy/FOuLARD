@@ -1,4 +1,4 @@
-[Reza Hosseini Ghomi](http://www.rezahosseinighomi.com/) reached out to CMI to discuss using their NLP tools for our population.
+[Reza Hosseini Ghomi](http://www.rezahosseinighomi.com/) reached out to CMI to discuss using their {{Natural Language Processing (NLP)}} tools for our population.
 
 [http://www.neurolex.co/](http://www.neurolex.co/)
 
