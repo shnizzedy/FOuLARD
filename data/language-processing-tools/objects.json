@@ -1,4 +1,11 @@
-[  
+[ 
+   {
+        "type":"method",
+        "name":"Latent Semantic Indexing (LSI)",
+        "depends":[  
+            "Latent Semantic Analysis (LSA)"
+        ]
+   },
    {  
         "type":"domain",
         "name":"Medicine",
