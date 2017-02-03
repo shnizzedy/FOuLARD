@@ -22,7 +22,8 @@
     },
     {
         "depends":[
-            "Topic Models (TM)"
+            "Topic Models (TM)",
+            "Probablistic Graphical Model (PGM)"
         ],
         "name":"Bayesian Inferencing",
         "type":"method"
@@ -202,6 +203,23 @@
     },
     {
         "depends":[
+            "Vector Space Model (VSM)",
+            "Psycholinguistics",
+            "Artificial Intelligence",
+            "Controlled Vocabulary"
+        ],
+        "name":"Predication-based Semantic Indexing (PSI)",
+        "type":"method"
+    },
+    {
+        "depends":[
+            "Probability"
+        ],
+        "name":"Probablistic Graphical Model (PGM)",
+        "type":"method"
+    },
+    {
+        "depends":[
             "Probability"
         ],
         "name":"Random Indexing",
@@ -320,7 +338,9 @@
         "type":"method"
     },
     {
-        "depends":[],
+        "depends":[
+            "Computational Semantic Analysis"
+        ],
         "name":"Apache Lucene",
         "type":"software"
     },
@@ -349,9 +369,17 @@
             "Hidden Markov Models (HMM)",
             "Linear Algebra",
             "Bag of n-Grams",
-            "Feature Hashing"
+            "Feature Hashing",
+            "Computational Semantic Analysis"
         ],
         "name":"Facebook fastText",
+        "type":"software"
+    },
+    {
+        "depends":[
+            "Probablistic Graphical Model (PGM)"
+        ],
+        "name":"Fathom",
         "type":"software"
     },
     {
@@ -362,7 +390,8 @@
     {
         "depends":[
             "Defined Corpus",
-            "Latent Semantic Analysis (LSA)"
+            "Latent Semantic Analysis (LSA)",
+            "Predication-based Semantic Indexing (PSI)"
         ],
         "name":"InfoMap NLP",
         "type":"software"
@@ -435,7 +464,10 @@
             "Random Indexing",
             "Singular Value Decomposition",
             "Random Projection",
-            "Apache Lucene"
+            "Apache Lucene",
+            "Predication-based Semantic Indexing (PSI)",
+            "Latent Semantic Analysis (LSA)",
+            "Reflective Random Indexing"
         ],
         "name":"Semantic Vectors",
         "type":"software"
@@ -481,7 +513,10 @@
             "Random Projection",
             "Hierarchical Dirichlet Process (HDP)",
             "Latent Semantic Analysis (LSA)",
-            "Latent Dirichlet Allocation (LDA)"
+            "Latent Dirichlet Allocation (LDA)",
+            "Latent Semantic Indexing (LSI)",
+            "Singular Value Decomposition (SVD)",
+            "Deep Learning"
         ],
         "name":"gensim",
         "type":"software"
@@ -506,7 +541,7 @@
             "Hidden Markov Models (HMM)",
             "term frequency\u2013inverse document frequency (tf\u2013idf)"
         ],
-        "name":"Althoff, T., Clark, K., & Leskovec, J. (2016)",
+        "name":"Althoff, T., Clark, K., and Leskovec, J. (2016)",
         "type":"paper"
     },
     {
@@ -517,14 +552,14 @@
             "Defined Corpus",
             "Facebook fastText"
         ],
-        "name":"Bojanowski, P., Grave, E., Joulin, A., & Mikolov, T. (2016)",
+        "name":"Bojanowski, P., Grave, E., Joulin, A., and Mikolov, T. (2016)",
         "type":"paper"
     },
     {
         "depends":[
             "The Computerized assessment of Affect from Natural Speech (CANS)"
         ],
-        "name":"Cohen, A. S., Minor, K. S, Najolia, G.M., & Hong, S. L (2009)",
+        "name":"Cohen, A. S., Minor, K. S, Najolia, G.M., and Hong, S. L (2009)",
         "type":"paper"
     },
     {
@@ -545,7 +580,7 @@
             "Construction\u2013Integration (C\u2013I)",
             "SPECIALIST NLP Tools"
         ],
-        "name":"Cohen, T., Bletter, B., & Patel, V. (2008)",
+        "name":"Cohen, T., Bletter, B., and Patel, V. (2008)",
         "type":"paper"
     },
     {
@@ -554,21 +589,21 @@
             "Bag of Concepts",
             "Expansion-by-Analogy"
         ],
-        "name":"Cohen, T., Widdows, D., & Rindflesch, T. (2014)",
+        "name":"Cohen, T., Widdows, D., and Rindflesch, T. (2014)",
         "type":"paper"
     },
     {
         "depends":[
             "General Text Parser (GTP)"
         ],
-        "name":"Giles, J. T., Wo, L. & Berry, M. W. (2003)",
+        "name":"Giles, J. T., Wo, L. and Berry, M. W. (2003)",
         "type":"paper"
     },
     {
         "depends":[
             "Stochastic Variational Inferencing"
         ],
-        "name":"Hoffman, M. D., Blei, D. M., Wang, C., & Paisley, J. (2013)",
+        "name":"Hoffman, M. D., Blei, D. M., Wang, C., and Paisley, J. (2013)",
         "type":"paper"
     },
     {
@@ -576,14 +611,14 @@
             "Linguistic Inquiry and Word Count (LIWC)",
             "Valence Aware Dictionary for sEntiment Reasoning (VADER)"
         ],
-        "name":"Hutto, C. J. & Gilbert, E. E. (2014)",
+        "name":"Hutto, C. J. and Gilbert, E. E. (2014)",
         "type":"paper"
     },
     {
         "depends":[
             "Facebook fastText"
         ],
-        "name":"Joulin, A., Grave, E., Bojanowski, P., & Mikolov, T. (2016)",
+        "name":"Joulin, A., Grave, E., Bojanowski, P., and Mikolov, T. (2016)",
         "type":"paper"
     },
     {
@@ -594,7 +629,7 @@
             "Word2Vec",
             "hyperwords"
         ],
-        "name":"Levy, O., Goldberg, Y. & Dagan, I. (2015)",
+        "name":"Levy, O., Goldberg, Y. and Dagan, I. (2015)",
         "type":"paper"
     },
     {
@@ -602,7 +637,7 @@
             "Vector Symbolic Architecture (VSA)",
             "Sparse Distributed Memory (SDM)"
         ],
-        "name":"Levy, S.D., Lowney, C., Meroney, W., & Gayler, R.W. (2014)",
+        "name":"Levy, S.D., Lowney, C., Meroney, W., and Gayler, R.W. (2014)",
         "type":"paper"
     },
     {
@@ -613,7 +648,7 @@
             "Neural Network Language Model (NNLM)",
             "Bag of n-Grams"
         ],
-        "name":"Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013)",
+        "name":"Mikolov, T., Chen, K., Corrado, G., and Dean, J. (2013)",
         "type":"paper"
     },
     {
@@ -628,7 +663,7 @@
         "depends":[
             "Continuous Space Lanugage Model"
         ],
-        "name":"Mikolov, T., Yih, W. T., & Zweig, G. (2013)",
+        "name":"Mikolov, T., Yih, W. T., and Zweig, G. (2013)",
         "type":"paper"
     },
     {
@@ -636,7 +671,7 @@
             "Latent Semantic Analysis (LSA)",
             "Personal Thematic Coherence (PTC)"
         ],
-        "name":"Tagamets, M. A., Cortez, C. R., Griego, J. A., & Elvev\u00e5g, B. (2014)",
+        "name":"Tagamets, M. A., Cortez, C. R., Griego, J. A., and Elvev\u00e5g, B. (2014)",
         "type":"paper"
     },
     {
@@ -648,10 +683,27 @@
     },
     {
         "depends":[
+            "Reflective Random Indexing",
+            "Vector Space Model (VSM)"
+        ],
+        "name":"Wahle, M., Widdows, D., Herskovic, J. R., Bernstam, E. V., and Cohen, T. (2012)",
+        "type":"paper"
+    },
+    {
+        "depends":[
+            "Semantic Vectors",
+            "Predication-based Semantic Indexing (PSI)",
+            "Vector Symbolic Architecture (VSA)"
+        ],
+        "name":"Widdows, D. and Cohen, T. (2015)",
+        "type":"paper"
+    },
+    {
+        "depends":[
             "Unified Medical Language System (UMLS)",
             "Word Sense Disambiguation (WSD)"
         ],
-        "name":"Widdows, D., Peters, S., Cederberg, S., Chan, C. K., Steffen, D., & Buitelaar, P. (2003)",
+        "name":"Widdows, D., Peters, S., Cederberg, S., Chan, C. K., Steffen, D., and Buitelaar, P. (2003)",
         "type":"paper"
     },
     {
@@ -743,9 +795,24 @@
     },
     {
         "depends":[
+            "Machine Learning"
+        ],
+        "name":"Artificial Intelligence",
+        "type":"domain"
+    },
+    {
+        "depends":[
             "Natural Language Processing (NLP)"
         ],
         "name":"Computational Semantic Analysis",
+        "type":"domain"
+    },
+    {
+        "depends":[
+            "Machine Learning",
+            "Neural Networks"
+        ],
+        "name":"Deep Learning",
         "type":"domain"
     },
     {
@@ -756,7 +823,9 @@
         "type":"domain"
     },
     {
-        "depends":[],
+        "depends":[
+            "Probablistic Graphical Model (PGM)"
+        ],
         "name":"Machine Learning",
         "type":"domain"
     },
