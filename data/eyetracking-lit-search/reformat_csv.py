@@ -15,7 +15,26 @@ Authors:
 @author: jon.clucas
 """
 
-import json, numpy as np, pandas as pd
+import json, numpy as np, pandas as pd, re, string, subprocess
+
+subprocess.run("cp objects.json old_objects.json", shell=True)
+
+def short_ref(long_citation, year):
+    shorty = re.search(r"\w*,[^(,)]*(\.,)", long_citation)
+    if shorty:
+        return ''.join([shorty.group(0).strip(' '), ' et al. (', str(year), ')'
+                       ])
+    else:
+        return long_citation
+        
+def ref_exists(ref):
+    ref = ref[:len(ref) - 1]
+    if ref[len(ref) - 1] in ''.join([string.digits, 'z']):
+        ref = ''.join([ref, 'a)'])
+    else:
+        ref = ''.join([ref[:len(ref) - 1], chr(ord(ref[len(ref) - 1]) + 1), ')'
+                       ])
+    return ref
 
 with open('compilation.csv', 'r') as f:
     data = pd.read_csv(f)
@@ -23,9 +42,15 @@ with open('compilation.csv', 'r') as f:
 new_json = {}
 new_markdown = {}
 
+data.sort_values(by=['Year', 'Article Citation'], na_position='first', inplace=
+                 True)
+
 for index, row in data.iterrows():
     article = row["Article Citation"].strip().replace("&", "and")
-    article = article[0:article.find(')')+1]
+    article = short_ref(article[0:article.find(')')+1], row["Year"])
+    while article in new_json:
+        article = ref_exists(article)
+    print(article)
     new_json[article] = {"name" : article,
              "type" : "article", "depend" : [row[
              "Eyetracking Hardware"].strip(), row[
@@ -82,7 +107,7 @@ for key in new_json:
     new_json_list.append(new_json[key])
 
 
-with open('new_objects.json', 'w') as f:
+with open('objects.json', 'w') as f:
     json.dump(new_json_list, f)
 
 for key in new_markdown:
