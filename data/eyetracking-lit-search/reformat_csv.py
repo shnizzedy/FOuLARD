@@ -6,6 +6,7 @@ reformat_csv.py
 Script to format csv lit search into JSON objects for D3-process-map springform visualization (https://github.com/nylen/d3-process-map).
 
 Authors:
+    - Michael Fleischmann, 2017 (michael.fleischmann@childmind.org)
     – Jon Clucas, 2017 (jon.clucas@childmind.org)
     – Bonhwang Koo, 2017 (bonhwang.koo@childmind.org)
     – James Nylen, 2013–2014+ (jnylen@gmail.com)
@@ -48,6 +49,8 @@ data.sort_values(by=['Year', 'Article Citation'], na_position='first', inplace=
 for index, row in data.iterrows():
     article = row["Article Citation"].strip().replace("&", "and")
     article = short_ref(article[0:article.find(')')+1], row["Year"])
+    hardware = row["Eyetracking Hardware"].strip()
+    disorder = row["Disorder"].strip()
     while article in new_json:
         article = ref_exists(article)
     print(article)
@@ -56,12 +59,12 @@ for index, row in data.iterrows():
              "Eyetracking Hardware"].strip(), row[
              "Disorder"].strip(), row["Analysis Method"], row[
              "Analysis Software"]]}
-    new_markdown[article] = {"Citation" : row["Article Citation"], "Year" :
+    new_markdown[article] = {"Citation": row["Article Citation"], "Year" :
                  row["Year"], "Hardware": row["Eyetracking Hardware"].strip(),
-                 "Disorder" : row["Disorder"].strip(), "Task" : row[
+                 "Disorder": row["Disorder"].strip(), "Task": row[
                  "Task"].strip(), "Method" : row["Analysis Method"],
-                 "Software" : row["Analysis Software"], "Conclusion" : row[
-                 "Conclusion"].strip()}
+                 "Software": row["Analysis Software"], "Conclusion": row[
+                 "Conclusion"].strip(), "Link": row["Link"]}
     if row["Eyetracking Hardware"].strip() not in new_json:
         new_json[row["Eyetracking Hardware"].strip()] = {"name" : row[
                  "Eyetracking Hardware"].strip(), "type" : "hardware"}
@@ -111,7 +114,9 @@ with open('objects.json', 'w') as f:
     json.dump(new_json_list, f)
 
 for key in new_markdown:
-    mkstring = ''.join(["### ", new_markdown[key]["Citation"],
-               "\n### Conclusion\n", new_markdown[key]["Conclusion"]])
+    mkstring = ''.join(["### [", new_markdown[key]["Citation"], "](", new_markdown[key]["Link"],
+               ")\n### Conclusion\n", new_markdown[key]["Conclusion"],
+                        "\n### Eyetracking Hardware\n", new_markdown[key]["Hardware"],
+                        "\n### Disorder(s)\n", new_markdown[key]["Disorder"].replace(";", ",")])
     with open(''.join([key.strip(), ".mkdn"]), "w") as f:
         f.write(mkstring)
