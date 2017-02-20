@@ -1,3 +1,7 @@
-### Bradley, M. C., Hanna, D., Wilson, P., Scott, G., Quinn, P., & Dyer, K. F. (2016). Obsessive–compulsive symptoms and attentional bias: An eye-tracking methodology. Journal of behavior therapy and experimental psychiatry, 50, 303-308.
+### [Bradley, M. C., Hanna, D., Wilson, P., Scott, G., Quinn, P., & Dyer, K. F. (2016). Obsessive–compulsive symptoms and attentional bias: An eye-tracking methodology. Journal of behavior therapy and experimental psychiatry, 50, 303-308.](https://www.ncbi.nlm.nih.gov/pubmed/26605829)
 ### Conclusion
 Obsessive compulsive symptom severity moderately predicted greater frequency and duration of fixations on OCD stimuli, which reflect the maintenance attentional bias.
+### Eyetracking Hardware
+iView X Remote Eyetracking Device (RED250) (SensoMotoric Instruments)
+### Disorder(s)
+OCD

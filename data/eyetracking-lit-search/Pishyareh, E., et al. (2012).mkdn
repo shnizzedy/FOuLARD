@@ -1,3 +1,7 @@
-### Pishyareh, E., Tehrani-Doost, M., Mahmoodi-Gharaie, J., Khorrami, A., Joudi, M., & Ahmadi, M. (2012). Attentional Bias towards Emotional Scenes in Boys with Attention Deficit Hyperactivity Disorder. Iranian Journal of Psychiatry, 7(2), 93–96.
+### [Pishyareh, E., Tehrani-Doost, M., Mahmoodi-Gharaie, J., Khorrami, A., Joudi, M., & Ahmadi, M. (2012). Attentional Bias towards Emotional Scenes in Boys with Attention Deficit Hyperactivity Disorder. Iranian Journal of Psychiatry, 7(2), 93–96.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3428644/)
 ### Conclusion
 Children with ADHD attend to unpleasant scenes for longer than controls
+### Eyetracking Hardware
+EyeLink II (SR Research)
+### Disorder(s)
+ADHD
