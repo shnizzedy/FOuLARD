@@ -3,7 +3,8 @@
 """
 reformat_csv.py
 
-Script to format csv lit search into JSON objects for D3-process-map springform visualization (https://github.com/nylen/d3-process-map).
+Script to format csv lit search into JSON objects for D3-process-map springform
+visualization (https://github.com/nylen/d3-process-map).
 
 Authors:
     - Michael Fleischmann, 2017 (michael.fleischmann@childmind.org)
