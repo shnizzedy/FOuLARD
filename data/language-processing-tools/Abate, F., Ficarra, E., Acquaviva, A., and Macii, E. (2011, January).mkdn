@@ -1,0 +1,7 @@
+## Abate, F., Ficarra, E., Acquaviva, A., & Macii, E. (2011, January). Improving latent semantic analysis of biomedical literature integrating UMLS Metathesaurus and biomedical pathways databases. In *International Joint Conference on Biomedical Engineering Systems and Technologies*, 173-187. Springer Berlin Heidelberg. [doi:10.1007/978-3-642-29752-6_13](https://dx.doi.org/10.1007/978-3-642-29752-6_13)
+
+
+In this conference paper, Abate et al. 
+> introduce a new methodology for quantitatively scoring the degree of biological correlation among biological terms occurring in biomedical abstracts
+
+(p. 173).
