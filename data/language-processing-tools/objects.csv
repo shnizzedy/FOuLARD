@@ -1,0 +1,196 @@
+name,type,depends,markdown
+Support Vector Machine (SVM),method,['Machine Learning'],
+Skip-Gram with Negative-Sampling Training Method (SGNS),method,"['Bag of n-Grams', 'Probability']",
+International Affective Picture System (IAPS),database,[],
+Pointwise Mutual Information (PMI),method,['Probability'],
+"Bojanowski, P., et al. (2016)",paper,"['Neural Network Language Model (NNLM)', 'Bag of n-Grams', 'Continuous Space Lanugage Model', 'Defined Corpus', 'Facebook fastText']",
+SNOMED-CT,database,['Controlled Vocabulary'],
+Probablistic Graphical Model (PGM),method,['Probability'],
+The Computerized assessment of Affect from Natural Speech (CANS),protocol,"['International Affective Picture System (IAPS)', 'Self-Assessment Manikin (SAM)', 'Linguistic Inquiry and Word Count (LIWC)', 'Praat', 'E-Prime']",
+Word2Vec,software,"['Apache Lucene', 'Pointwise Mutual Information (PMI)', 'TensorFlow', 'Bag of Words', 'Skip-Gram with Negative-Sampling Training Method (SGNS)']","#### [TensorFlow Word2Vec](https://www.tensorflow.org/tutorials/word2vec/)
+
+[https://github.com/tensorflow/models/blob/master/tutorials/embedding/word2vec.py](https://github.com/tensorflow/models/blob/master/tutorials/embedding/word2vec.py)
+
+Open-source, freely available, and actively maintained. (Python)
+
+#### [DL4J Word2Vec](https://deeplearning4j.org/word2vec)
+
+Open-source, freely available, and actively maintained. (Java)
+
+Vectorizes words in a context-based 500-dimensional space."
+Machine Learning,domain,['Probablistic Graphical Model (PGM)'],
+ReVerb,software,['Controlled Vocabulary'],"#### Open Information Extraction Software
+
+[http://reverb.cs.washington.edu/](http://reverb.cs.washington.edu/)
+
+Open-source, academic-specific license. Last updated 2013 September. (Java)
+"
+"Widdows, D., et al. (2003)",paper,"['Unified Medical Language System (UMLS)', 'Word Sense Disambiguation (WSD)']",
+Psycholinguistics,domain,['Medicine'],
+Word Sense Disambiguation (WSD),method,['Computational Semantic Analysis'],
+"Hutto, C. J. and Gilbert, E. E. (2014)",paper,"['Linguistic Inquiry and Word Count (LIWC)', 'Valence Aware Dictionary for sEntiment Reasoning (VADER)']",
+"Abate, F., et al. (2011)",paper,"['MetaThesaurus', 'Latent Semantic Analysis (LSA)']","## Abate, F., Ficarra, E., Acquaviva, A., & Macii, E. (2011, January). Improving latent semantic analysis of biomedical literature integrating UMLS Metathesaurus and biomedical pathways databases. In *International Joint Conference on Biomedical Engineering Systems and Technologies*, 173-187. Springer Berlin Heidelberg. [doi:10.1007/978-3-642-29752-6_13](https://dx.doi.org/10.1007/978-3-642-29752-6_13)
+
+
+In this conference paper, Abate et al. 
+> introduce a new methodology for quantitatively scoring the degree of biological correlation among biological terms occurring in biomedical abstracts
+
+(p. 173)."
+Expansion-by-Analogy,method,['Reflective Random Indexing'],
+TensorFlow,software,['DistBelief'],
+Neural Networks,method,['Machine Learning'],
+Biomarker Assays,method,"['Medicine', 'Probability']",
+Hierarchical Dirichlet Process (HDP),method,['Bayesian Inferencing'],
+"Joulin, A., et al. (2016)",paper,['Facebook fastText'],
+Bag of Concepts,method,['Bag of Words'],
+gensim,software,"['Topic Models (TM)', 'Word2Vec', 'Random Projection', 'Hierarchical Dirichlet Process (HDP)', 'Latent Semantic Analysis (LSA)', 'Latent Dirichlet Allocation (LDA)', 'Latent Semantic Indexing (LSI)', 'Singular Value Decomposition (SVD)', 'Deep Learning']","[http://radimrehurek.com/gensim](http://radimrehurek.com/gensim); [https://github.com/RaRe-Technologies/gensim](https://github.com/RaRe-Technologies/gensim)
+
+Open-source, freely available, actively maintained. (Python)
+
+> • Efficient multicore implementations of popular algorithms, such as online {{Latent Semantic Analysis (LSA)}}/{{Latent Semantic Indexing (LSI)}}/{{Singular Value Decomposition (SVD)}}, {{Latent Dirichlet Allocation (LDA)}}, {{Random Projection}}s (RP), {{Hierarchical Dirichlet Process (HDP)}} or {{Word2Vec}} {{Deep Learning}}.
+> 
+> • Distributed computing: can run {{Latent Semantic Analysis (LSA)}} and {{Latent Dirichlet Allocation (LDA)}} on a cluster of computers.
+"
+Latent Dirichlet Allocation (LDA),method,"['term frequency–inverse document frequency (tf–idf)', 'Topic Models (TM)', 'Bag of Concepts', 'Latent Semantic Analysis (LSA)', 'Computational Semantic Analysis']","A statistical bag-of-words method for modeling the relatedness of documents which “assumes each word in an utterance is drawn from one of a set of latent topics, where each topic is a multinomial distribution over the vocabulary” (Dinakar et al., 2014).
+
+### Interactive Examples
+
++   [NYT Demo](http://www.princeton.edu/~achaney/tmve/nyt_demo/browse/topic-presence.html)
++   [Federal Cases Demo](http://www.princeton.edu/~achaney/tmve/federal_cases/browse/topic-presence.html)
++   [Wikipedia Demo](http://www.princeton.edu/~achaney/tmve/wiki100k/browse/topic-presence.html)"
+DistBelief,software,['Neural Network Language Model (NNLM)'],
+Defined Corpus,method,['Computational Semantic Analysis'],
+SPECIALIST Lexicon,database,[],
+Global Vectors (GloVe),method,"['Vector Space Model (VSM)', 'hyperwords']",
+Linguistic Inquiry and Word Count (LIWC),software,['Controlled Vocabulary'],
+hyperwords,software,"['Pointwise Mutual Information (PMI)', 'Skip-Gram with Negative-Sampling Training Method (SGNS)']",
+Region Connection Calculus (RCC),method,['Mathematics'],
+"Tagamets, M. A., et al. (2014)",paper,"['Latent Semantic Analysis (LSA)', 'Personal Thematic Coherence (PTC)']",
+Apache Lucene,software,['Computational Semantic Analysis'],"> a high-performance, full-featured text search engine library written entirely in Java
+
+–[http://lucene.apache.org/core/](http://lucene.apache.org/core/)
+
+Open-source, freely available, actively maintained (Java)
+
+The engine on which {{Semantic Vectors}} runs
+
+[Python wrapper](http://lucene.apache.org/pylucene/) available (among many language wrappers)
+"
+Self-Assessment Manikin (SAM),protocol,['surveys'],
+"Hoffman, M. D., et al. (2013)",paper,['Stochastic Variational Inferencing'],
+"Cohen, T., et al. (2014)",paper,"['Bag of Words', 'Bag of Concepts', 'Expansion-by-Analogy']",
+Feature Hashing,method,['Machine Learning'],
+"Mikolov, T., et al. (2011)",paper,"['Maximum Entropy Language Model (MELM)', 'Neural Network Language Model (NNLM)']",
+Reflective Random Indexing,method,['Random Indexing'],"> Instead of starting with the document-term matrix, randomly generated vectors with a much lower dimensionality are used as the initial term vectors. These vectors are constructed such that they have a high probability of being orthogonal, or close-to-orthogonal to one another, and therefore serve as a reduced dimensional approximation of the independent column assigned to each term in the original [{{Vector Space Model (VSM)}}] approach.
+
+–{{Wahle, M., Widdows, D., Herskovic, J. R., Bernstam, E. V., and Cohen, T. (2012)}}.
+"
+Artificial Intelligence,domain,['Machine Learning'],
+"Giles, J. T., et al. (2003)",paper,['General Text Parser (GTP)'],
+Stochastic Variational Inferencing,method,"['Variational Inferencing', 'Markov chain Monte Carlo (MCMC)']",
+"Althoff, T., et al. (2016)",paper,"['Hidden Markov Models (HMM)', 'term frequency–inverse document frequency (tf–idf)']",
+Semantic Vectors,software,"['InfoMap NLP', 'Random Indexing', 'Singular Value Decomposition', 'Random Projection', 'Apache Lucene', 'Predication-based Semantic Indexing (PSI)', 'Latent Semantic Analysis (LSA)', 'Reflective Random Indexing']","[https://github.com/semanticvectors/semanticvectors](https://github.com/semanticvectors/semanticvectors)
+
+Open-source, freely available, and actively maintained. (Java)
+
+Somewhat sparse documentation: [https://github.com/semanticvectors/semanticvectors/wiki](https://github.com/semanticvectors/semanticvectors/wiki)
+
+GUI: [https://bitbucket.org/mruepp/semantic-analysis/overview](https://bitbucket.org/mruepp/semantic-analysis/overview)
+
+> {{Predication-based Semantic Indexing (PSI)}} [. . .] involves the use of {{Vector Symbolic Architecture (VSA)}}s to represent the concepts and relationships from a knowledge base of subject-predicate-object triples.
+
+– {{Widdows, D. and Cohen, T. (2015)}}"
+Suggested Upper Merged Ontology (SUMO),database,['WordNet'],
+MedLEE,software,[],
+Bag of n-Grams,method,['Bag of Words'],
+MetaThesaurus,database,['SNOMED-CT'],
+surveys,method,"['Psycholinguistics', 'Probability']",
+Controlled Vocabulary,method,['Defined Corpus'],
+Semantic Network,database,[],
+"Cohen, A. S., et al. (2009)",paper,['The Computerized assessment of Affect from Natural Speech (CANS)'],
+NLTK,software,"['Bayesian Inferencing', 'Word Sense Disambiguation (WSD)', 'Maximum Entropy Language Model (MELM)']","Open-source, freely available, and actively maintained."
+Construction–Integration (C–I),method,['Psycholinguistics'],
+InfoMap NLP,software,"['Defined Corpus', 'Latent Semantic Analysis (LSA)', 'Predication-based Semantic Indexing (PSI)']",
+Computational Semantic Analysis,domain,['Natural Language Processing (NLP)'],"[http://www.cs.ox.ac.uk/activities/compdistmeaning/index.html](http://www.cs.ox.ac.uk/activities/compdistmeaning/index.html)
+
+[http://www.quantuminteraction.org/applications/linguistics](http://www.quantuminteraction.org/applications/linguistics)
+
+also known as
+## Quantum Linguistics"
+Singular Value Decomposition,method,[],
+Vowpal Wabbit,software,"['Bag of Words', 'Feature Hashing']","[https://github.com/JohnLangford/vowpal_wabbit/wiki](https://github.com/JohnLangford/vowpal_wabbit/wiki)
+
+Freely available, actively maintained"
+"Mikolov, T., et al. (2013)",paper,"['Latent Dirichlet Allocation (LDA)', 'Latent Semantic Analysis (LSA)', 'Bag of Words', 'Neural Network Language Model (NNLM)', 'Bag of n-Grams']",
+WordNet,database,['Controlled Vocabulary'],
+Vector Symbolic Architecture (VSA),method,['Vector Space Model (VSM)'],[http://home.wlu.edu/~levys/vsa.html](http://home.wlu.edu/~levys/vsa.html)
+"Levy, S.D., et al. (2014)",paper,"['Vector Symbolic Architecture (VSA)', 'Sparse Distributed Memory (SDM)']",
+Deep Learning,domain,"['Machine Learning', 'Neural Networks']",
+Latent Semantic Analysis (LSA),method,"['Vector Space Model (VSM)', 'Computational Semantic Analysis', 'term frequency–inverse document frequency (tf–idf)', 'Singular Value Decomposition']",
+Bayesian Inferencing,method,"['Topic Models (TM)', 'Probablistic Graphical Model (PGM)']",
+Lemmatization,method,"['Controlled Vocabulary', 'Probability']",
+Apache OpenNLP,software,"['Lemmatization', 'Maximum Entropy Language Model (MELM)']","[http://opennlp.apache.org/](http://opennlp.apache.org/)
+
+Open-source, freely available, and actively maintained."
+Medicine,domain,[],
+Singular Value Decomposition (SVD),method,['Linear Algebra'],
+Valence Aware Dictionary for sEntiment Reasoning (VADER),software,"['Linguistic Inquiry and Word Count (LIWC)', 'Controlled Vocabulary']","[https://github.com/cjhutto/vaderSentiment](https://github.com/cjhutto/vaderSentiment); [https://github.com/apanimesh061/VaderSentimentJava](https://github.com/apanimesh061/VaderSentimentJava); [http://www.nltk.org/_modules/nltk/sentiment/vader.html](http://www.nltk.org/_modules/nltk/sentiment/vader.html)
+
+Open-source, freely available, and actively maintained. (Python)"
+E-Prime,software,[],
+Latent Relational Analysis (LRA),method,"['Singular Value Decomposition (SVD)', 'Defined Corpus', 'Vector Space Model (VSM)']",
+"Levy, O., et al. (2015)",paper,"['Global Vectors (GloVe)', 'Pointwise Mutual Information (PMI)', 'Skip-Gram with Negative-Sampling Training Method (SGNS)', 'Word2Vec', 'hyperwords']",
+Hidden Markov Models (HMM),method,"['Neural Networks', 'Markov chain Monte Carlo (MCMC)', 'Computational Semantic Analysis']",
+SPECIALIST NLP Tools,software,['SPECIALIST Lexicon'],
+"Cohen, T., et al. (2008)",paper,"['Region Connection Calculus (RCC)', 'SNOMED-CT', 'Latent Semantic Analysis (LSA)', 'Controlled Vocabulary', 'Vector Space Model (VSM)', 'Continuous Space Lanugage Model', 'Support Vector Machine (SVM)', 'Hyperspace Analogue to Language (HAL)', 'Singular Value Decomposition (SVD)', 'WordNet', 'MedLEE', 'General Text Parser (GTP)', 'InfoMap NLP', 'Construction–Integration (C–I)', 'SPECIALIST NLP Tools']",
+Personal Thematic Coherence (PTC),method,['Psycholinguistics'],
+MedLingMap,database,['MedLEE'],
+Natural Language Processing (NLP),domain,['Machine Learning'],
+Hyperspace Analogue to Language (HAL),method,['Vector Space Model (VSM)'],
+Vector Space Model (VSM),method,['Probability'],
+Maximum Entropy Language Model (MELM),method,"['Bag of n-Grams', 'Defined Corpus', 'Bayesian Inferencing']",
+Mathematics,domain,[],
+Bag of Words,method,['Probability'],
+"Turney, D. (2005)",paper,['Latent Relational Analysis (LRA)'],
+Unified Medical Language System (UMLS),database,"['Semantic Network', 'SNOMED-CT', 'SPECIALIST Lexicon', 'MetaThesaurus', 'Topic Models (TM)', 'Controlled Vocabulary']",
+Latent Semantic Indexing (LSI),method,['Latent Semantic Analysis (LSA)'],
+Signal Processing,domain,['Mathematics'],
+S-Space,software,"['Latent Semantic Analysis (LSA)', 'Reflective Random Indexing', 'Latent Relational Analysis (LRA)', 'Hyperspace Analogue to Language (HAL)', 'Random Indexing']","[https://github.com/john-hewitt/S-Space](https://github.com/john-hewitt/S-Space)
+
+Open-source, freely available, last updated 2016 June. (Java)"
+Neural Network Language Model (NNLM),method,"['Neural Networks', 'Vector Space Model (VSM)', 'Natural Language Processing (NLP)']",
+Markov chain Monte Carlo (MCMC),method,['Probability'],
+"Widdows, D. and Cohen, T. (2015)",paper,"['Semantic Vectors', 'Predication-based Semantic Indexing (PSI)', 'Vector Symbolic Architecture (VSA)']","## Widdows, D. & Cohen, T. (2015). Reasoning with Vectors: A Continuous Model for Fast Robust Inference. *Logic Journal of the IGPL, 23*(2), 141-173. [doi:10.1093/jigpal/jzu028](http://dx.doi.org/10.1093/jigpal/jzu028)
+
+> {{Predication-based Semantic Indexing (PSI)}} [. . .] involves the use of {{Vector Symbolic Architecture (VSA)}}s to represent the concepts and relationships from a knowledge base of subject-predicate-object triples."
+Multilingual Central Repository (MCL),database,['WordNet'],
+Praat,software,['Signal Processing'],
+"Wahle, M., et al. (2012)",paper,"['Reflective Random Indexing', 'Vector Space Model (VSM)']","Wahle, M., Widdows, D., Herskovic, J. R., Bernstam, E. V., & Cohen, T. (2012). Deterministic Binary Vectors for Efficient Automated Indexing of MEDLINE/PubMed Abstracts. *AMIA Annual Symposium Proceedings, 2012*, 940–949. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3540485/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3540485/)
+
+> The minimum global frequency for a term is 10 and the maximum is 2,000,000. Terms with global frequencies beyond these thresholds are ignored."
+General Text Parser (GTP),software,[],
+Continuous Space Lanugage Model,method,"['Neural Network Language Model (NNLM)', 'Latent Relational Analysis (LRA)']",
+Predication-based Semantic Indexing (PSI),method,"['Vector Space Model (VSM)', 'Psycholinguistics', 'Artificial Intelligence', 'Controlled Vocabulary']",
+Linear Algebra,domain,['Mathematics'],
+term frequency–inverse document frequency (tf–idf),method,[],
+Sparse Distributed Memory (SDM),method,"['Mathematics', 'Computational Semantic Analysis']",[http://home.wlu.edu/~levys/vsa.html](http://home.wlu.edu/~levys/vsa.html)
+Variational Inferencing,method,['Bayesian Inferencing'],
+Random Projection,method,['Probability'],
+NeuroLex Diagnostics,software,"['Natural Language Processing (NLP)', 'surveys', 'Biomarker Assays']","[Reza Hosseini Ghomi](http://www.rezahosseinighomi.com/) reached out to CMI to discuss using their {{Natural Language Processing (NLP)}} tools for our population.
+
+[http://www.neurolex.co/](http://www.neurolex.co/)
+
+> We believe the next-generation of medicine will be personalized, quality-driven, and focused on prevention. We place your health at your fingertips through our linguistic biomarker assays.
+
+[https://angel.co/neurolex-diagnostics](https://angel.co/neurolex-diagnostics)
+
+> Our company records a speech sample from a patient through a recording device (e.g. iPhone), and then does analysis on that waveform (.mp3) and the text transcribed from that waveform (.txt document) to detect health abnormalities. Our servers output a report, like in a blood test with extracted features and standard reference ranges, which could be used to infer health abnormalities from the speech sample. These reports can be used in combination with existing surveys (e.g. the PHQ-9) to equip physicians with added insight to treat patients across an array of health conditions."
+Fathom,software,['Probablistic Graphical Model (PGM)'],#### [Fathom: Probabilistic Graphical Models to Help Mental Health Counselors](https://www-prod.media.mit.edu/projects/fathom-probabilistic-graphical-models-to-help-mental-health-counselors/overview/)
+Probability,domain,['Mathematics'],
+Random Indexing,method,['Probability'],
+"Mikolov, T., et al. (2013a)",paper,['Continuous Space Lanugage Model'],
+openSMILE,software,['Signal Processing'],
+Facebook fastText,software,"['Hidden Markov Models (HMM)', 'Linear Algebra', 'Bag of n-Grams', 'Feature Hashing', 'Computational Semantic Analysis']","[https://github.com/facebookresearch/fastText](https://github.com/facebookresearch/fastText)
+
+[https://github.com/salestock/fastText.py](https://github.com/salestock/fastText.py)"
+Topic Models (TM),method,['Probability'],
