@@ -114,9 +114,10 @@ with open('objects.json', 'w') as f:
     json.dump(new_json_list, f)
 
 for key in new_markdown:
-    mkstring = ''.join(["### [", new_markdown[key]["Citation"], "](", new_markdown[key]["Link"],
-               ")\n### Conclusion\n", new_markdown[key]["Conclusion"],
-                        "\n### Eyetracking Hardware\n", new_markdown[key]["Hardware"],
-                        "\n### Disorder(s)\n", new_markdown[key]["Disorder"].replace(";", ",")])
+    mkstring = ''.join(["### [", new_markdown[key]["Citation"], "](",
+               new_markdown[key]["Link"], ")\n### Conclusion\n", new_markdown[
+               key]["Conclusion"], "\n### Eyetracking Hardware\n",
+               new_markdown[key]["Hardware"], "\n### Disorder(s)\n",
+               new_markdown[key]["Disorder"].replace(";", ",")])
     with open(''.join([key.strip(), ".mkdn"]), "w") as f:
         f.write(mkstring)
