@@ -47,7 +47,9 @@ Within each dataset, the following files are optional:
 
   One markdown file with the name of the name of the node and the extension `.mkdn` per node in diagram. When a node is clicked into focus, the Markdown documentation will display at the bottom of the diagram if such a file is present.
     
-Once your dataset is ready, load your FOuLARD instance on a PHP server and access via a Javascript-enabled browser.
+Once your dataset is ready, load your FOuLARD instance on a PHP server, setting the permissions of all `.php` files to `644` and all directories to `755`: `find . -type f -name '*.php' -exec chmod 644 {} \; find . -type d -exec chmod 755 {} \;`
+
+Once loaded, the application will be accessible via a Javascript-enabled browser.
 
 ## Example Applications
 
