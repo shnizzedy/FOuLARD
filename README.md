@@ -52,13 +52,13 @@ Once your dataset is ready, load your FOuLARD instance on a PHP server and acces
 ## Example Applications
 
 ### Eyetracking Lit Search
-[![dataset=language-processing-tools](https://raw.githubusercontent.com/shnizzedy/FOuLARD/master/img/thumb-eyetracking-lit-search.png)
+[![dataset=language-processing-tools](https://raw.githubusercontent.com/childmindinstitute/FOuLARD/master/img/thumb-eyetracking-lit-search.png)
 Eyetracking Lit Search](http://vasegurt.com/jon/cmi/nylen-d3-process-map/graph.php?dataset=eyetracking-lit-search "dataset=eyetracking-lit-search")
 
-This dataset was built from [a comma separated value file](https://github.com/shnizzedy/nylen-d3-process-map/blob/master/data/eyetracking-lit-search/compilation.csv) using [a Python script](https://github.com/shnizzedy/nylen-d3-process-map/blob/master/data/eyetracking-lit-search/reformat_csv.py) to create the relevant JSON and Markdown files. 
+This dataset was built from [a comma separated value file](https://github.com/childmindinstitute/nylen-d3-process-map/blob/master/data/eyetracking-lit-search/compilation.csv) using [a Python script](https://github.com/childmindinstitute/nylen-d3-process-map/blob/master/data/eyetracking-lit-search/reformat_csv.py) to create the relevant JSON and Markdown files. 
 
 ### Language Processing Tools
-[![dataset=language-processing-tools](https://raw.githubusercontent.com/shnizzedy/FOuLARD/master/img/thumb-language-processing-tools.png)
+[![dataset=language-processing-tools](https://raw.githubusercontent.com/childmindinstitute/FOuLARD/master/img/thumb-language-processing-tools.png)
 Language Processing Tools](http://vasegurt.com/jon/cmi/nylen-d3-process-map/graph.php?dataset=language-processing-tools "dataset=language-processing-tools")
 
-This dataset was built from a [Dia diagram](https://github.com/shnizzedy/nylen-d3-process-map/blob/master/data/language-processing-tools/Language%20Processing%20Tools.dia) [exported to Graphviz' DOT format](https://github.com/shnizzedy/FOuLARD/blob/master/data/language-processing-tools/lpt.dot) which was then loaded into Graphviz and [reexported as JSON](https://github.com/shnizzedy/FOuLARD/blob/master/data/language-processing-tools/objects.json). The few Markdown files in this example were handcoded.
+This dataset was built from a [Dia diagram](https://github.com/childmindinstitute/nylen-d3-process-map/blob/master/data/language-processing-tools/Language%20Processing%20Tools.dia) [exported to Graphviz' DOT format](https://github.com/childmindinstitute/FOuLARD/blob/master/data/language-processing-tools/lpt.dot) which was then loaded into Graphviz and [reexported as JSON](https://github.com/childmindinstitute/FOuLARD/blob/master/data/language-processing-tools/objects.json). The few Markdown files in this example were handcoded.
